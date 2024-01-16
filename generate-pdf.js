@@ -1,6 +1,9 @@
-const puppeteer = require('puppeteer');
-const fs = require('fs')
-const ejs = require('ejs')
+// const puppeteer = require('puppeteer');
+// const fs = require('fs')
+// const ejs = require('ejs')
+import puppeteer from "puppeteer"
+import ejs from "ejs"
+import fs from "fs"
 
 function compileTemplate(filename) {
   return ejs.compile(fs.readFileSync(`${filename}`, 'utf-8'))
